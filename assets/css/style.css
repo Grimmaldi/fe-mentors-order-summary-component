@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('../fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf');
+}
+
+:root {
+    --Blue100: hsl(225, 100%, 94%);
+    --Blue700: hsl(245, 75%, 52%);
+    --Blue50: hsl(225, 100%, 98%);
+    --Gray600: hsl(224, 23%, 55%);
+    --Blue950: hsl(223, 47%, 23%);
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    font-family: 'RedHatDisplay', sans-serif;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    background-color: white;
+    border: 0.2rem solid red;
+}
+
+.illustration-hero {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.order-summary {
+    padding: 1.5rem;
+}
+
+.order-summary h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.order-summary p {
+    font-size: 1rem;
+}
+
+.order-summary .plan-details {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--Blue50);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-summary .plan-details .plan-name-price {
+    flex-direction: column;
+}
+
+.change-plan-link {
+    text-decoration: none;
+}
