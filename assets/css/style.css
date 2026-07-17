@@ -37,10 +37,12 @@ body {
     flex-direction: column;
     width: 20rem;
     background-color: white;
-    border: 0.2rem solid red;
+    /* border: 0.2rem solid red; */
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
-.illustration-hero {
+.container .illustration-hero {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -71,5 +73,17 @@ body {
 }
 
 .change-plan-link {
+    color: var(--Blue700);
+}
+
+.change-plan-link:hover {
     text-decoration: none;
+}
+
+.pay {
+    display: flex;
+    background-color: var(--Blue700);
+    color: white;
+    width: fit-content;
+    height: 2rem;
 }
